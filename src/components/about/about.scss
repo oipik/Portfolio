@@ -1,0 +1,31 @@
+.about {
+  padding-top: 30px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  &__info {
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  &__link {
+    color: #1818EF;
+
+    &:hover {
+      color: #33A8F6;
+    }
+  }
+
+  &__descr {
+    text-indent: 25px;
+  }
+}

@@ -1,0 +1,21 @@
+.skills {
+  padding-top: 30px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, .15);
+    border-radius: 8px;
+    max-width: 200px;
+    width: 100%;
+  }
+}
