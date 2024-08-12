@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -55,10 +56,10 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  color: rgb(61, 61, 61)
+  color: rgb(61, 61, 61);
 }
 
 .title {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
 }

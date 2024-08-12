@@ -3,10 +3,10 @@ import "./header.scss";
 
 const Header = () => {
   const navItem = [
-    { item: "Обо мне", href: "#" },
-    { item: "Навыки", href: "#" },
-    { item: "Образование и опыт", href: "#" },
-    { item: "Портфолио", href: "#" },
+    { item: "Обо мне", href: "#about" },
+    { item: "Навыки", href: "#skills" },
+    { item: "Образование и опыт", href: "#background" },
+    { item: "Портфолио", href: "#portfolio" },
   ];
 
   return (

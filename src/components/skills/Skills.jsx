@@ -27,24 +27,22 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <Wrapper>
         <h2 className="skills__title title">Навыки</h2>
         <div className="skills__inner">
           <ul className="skills__items">
-            {
-              skills.map(({ src, name }) => (
-                <li className="skills__item" key={name}>
-                  <img src={src} alt={name} />
-                  <h4 className="skills__item-title">{name}</h4>
-                </li>
-              ))
-            }
+            {skills.map(({ src, name }) => (
+              <li className="skills__item" key={name}>
+                <img src={src} alt={name} />
+                <h4 className="skills__item-title">{name}</h4>
+              </li>
+            ))}
           </ul>
         </div>
       </Wrapper>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

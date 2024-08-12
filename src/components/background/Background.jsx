@@ -3,7 +3,7 @@ import "./background.scss";
 
 const Background = () => {
   return (
-    <section className="background">
+    <section className="background" id="background">
       <Wrapper>
         <h2 className="background__title title">Образование и опыт</h2>
         <div className="background__inner">
