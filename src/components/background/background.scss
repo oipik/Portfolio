@@ -1,0 +1,56 @@
+.background {
+  padding-top: 30px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    max-width: 48%;
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid #33a8f6;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: -27px;
+      top: 20px;
+      width: 3px;
+      height: 74px;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      &::after {
+        height: 55px;
+      }
+    }
+    &-term {
+      color: #bbbbbb;
+    }
+  }
+}
+
+.education {
+  &::after {
+    height: 182px;
+  }
+  &:last-child::after {
+    height: 110px;
+  }
+}

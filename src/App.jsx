@@ -1,6 +1,8 @@
 import About from "./components/about/About";
-import Experience from "./components/experience/Experience";
+import Background from "./components/background/Background";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
       <Header />
       <About />
       <Skills />
-      {/* <Experience /> */}
+      <Background />
+      <Portfolio />
+      <Footer />
     </>
   );
 }
