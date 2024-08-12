@@ -1,14 +1,15 @@
-import "./modal.scss";
+import './modal.scss';
 
 const Modal = ({ active, setActive }) => {
   return (
     <section
-      className={active ? "modal active" : "modal"}
+      className={active ? 'modal active' : 'modal'}
       onClick={() => setActive(false)}
     >
-      <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-        lore
-      </div>
+      <div
+        className={active ? 'modal__content modal-active' : 'modal__content'}
+        onClick={(e) => e.stopPropagation()}
+      ></div>
     </section>
   );
 };

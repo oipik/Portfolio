@@ -14,6 +14,7 @@
   &__item {
     margin-bottom: 15px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -24,6 +25,7 @@
       border-radius: 50%;
       border: 3px solid #33a8f6;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -36,10 +38,12 @@
 
     &:last-child {
       margin-bottom: 0;
+
       &::after {
         height: 55px;
       }
     }
+
     &-term {
       color: #bbbbbb;
     }
@@ -48,8 +52,9 @@
 
 .education {
   &::after {
-    height: 182px;
+    height: 178px;
   }
+
   &:last-child::after {
     height: 110px;
   }

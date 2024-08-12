@@ -1,29 +1,13 @@
-import Wrapper from "../wrapper/Wrapper";
-import "./portfolio.scss";
-
-import movieStore from "../../images/projects/movie-store.png";
-import fakeStore from "../../images/projects/fake-store.png";
-import portfolio from "../../images/projects/portfolio.png";
-import coffeeShop from "../../images/projects/coffee-shop.png";
-import axit from "../../images/projects/axit.png";
-import wawe from "../../images/projects/wawe.png";
-import Modal from "../modal/Modal";
-import { useState } from "react";
+import Wrapper from '../wrapper/Wrapper';
+import './portfolio.scss';
+import Modal from '../modal/Modal';
+import { useState } from 'react';
+import { projects } from '../../data/data';
 
 const Portfolio = () => {
   const [modalActive, setModalActive] = useState(true);
 
-  const projects = [
-    { src: movieStore, name: "Movie-store" },
-    { src: fakeStore, name: "Fake-store" },
-    { src: portfolio, name: "Portfolio" },
-    { src: coffeeShop, name: "Coffee-shop" },
-    { src: axit, name: "Axit" },
-    { src: wawe, name: "Wawe" },
-  ];
-
   const onClickItem = () => {
-    console.log("open");
     setModalActive(true);
   };
 
@@ -34,7 +18,11 @@ const Portfolio = () => {
         <div className="portfolio__inner">
           <ul className="portfolio__items">
             {projects.map(({ src, name }) => (
-              <li className="portfolio__item" onClick={() => onClickItem()}>
+              <li
+                className="portfolio__item"
+                key={name}
+                onClick={() => onClickItem()}
+              >
                 <img
                   className="portfolio__item-img"
                   src={src}
