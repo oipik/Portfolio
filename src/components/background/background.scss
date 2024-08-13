@@ -58,7 +58,8 @@
       align-items: center;
     }
     &__items {
-      margin-bottom: 0;
+      max-width: 100%;
+      margin-bottom: 25px;
       &:last-child {
         margin-bottom: 0;
       }
