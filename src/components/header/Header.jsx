@@ -1,22 +1,24 @@
-import Wrapper from "../wrapper/Wrapper";
+import { useState } from "react";
 import "./header.scss";
 
+import Wrapper from "../wrapper/Wrapper";
+import MobileMenu from "../mobileMenu/MobileMenu";
+import { navItems } from "../../data/data";
+
+import closeMenu from "../../images/icon-close-menu.svg";
+import mobileMenuIcon from "../../images/icon-menu.svg";
+
 const Header = () => {
-  const navItem = [
-    { item: "Обо мне", href: "#about" },
-    { item: "Навыки", href: "#skills" },
-    { item: "Образование и опыт", href: "#background" },
-    { item: "Портфолио", href: "#portfolio" },
-  ];
+  const [isMobileMenu, setIsMobileMenu] = useState(false);
 
   return (
     <header className="header">
       <Wrapper>
         <div className="header__inner">
-          <p className="header__logo">Portfolio</p>
+          <p className="header__logo logo">Portfolio</p>
           <nav className="nav">
             <ul className="nav__container">
-              {navItem.map(({ item, href }) => (
+              {navItems.map(({ item, href }) => (
                 <li className="nav__item" key={item}>
                   <a href={href} className="nav__link">
                     {item}
@@ -25,6 +27,17 @@ const Header = () => {
               ))}
             </ul>
           </nav>
+          <div
+            onClick={() => setIsMobileMenu(!isMobileMenu)}
+            className="header__mobile-menu"
+          >
+            {isMobileMenu ? (
+              <img src={closeMenu} alt="menu" />
+            ) : (
+              <img src={mobileMenuIcon} alt="menu" />
+            )}
+          </div>
+          <MobileMenu isOpen={isMobileMenu} setIsMobileMenu={setIsMobileMenu} />
         </div>
       </Wrapper>
     </header>

@@ -4,15 +4,18 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
+import Wrapper from "./components/wrapper/Wrapper";
 
 function App() {
   return (
     <>
       <Header />
-      <About />
-      <Skills />
-      <Background />
-      <Portfolio />
+      <Wrapper>
+        <About />
+        <Skills />
+        <Background />
+        <Portfolio />
+      </Wrapper>
       <Footer />
     </>
   );

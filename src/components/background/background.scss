@@ -1,5 +1,6 @@
 .background {
-  padding-top: 30px;
+  padding: 30px 10px 0 10px;
+  margin-left: 35px;
 
   &__inner {
     display: flex;
@@ -12,35 +13,35 @@
   }
 
   &__item {
-    margin-bottom: 15px;
+    padding-bottom: 20px;
     position: relative;
 
     &::before {
       content: "";
-      position: absolute;
       left: -35px;
       top: 0;
-      width: 20px;
-      height: 20px;
       border-radius: 50%;
-      border: 3px solid #33a8f6;
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      background: #fff;
+      border: 2px solid #33a8f6;
     }
 
     &::after {
       content: "";
       position: absolute;
-      left: -27px;
-      top: 20px;
-      width: 3px;
-      height: 74px;
-      background-color: rgba(0, 0, 0, 0.15);
+      height: 100%;
+      width: 2px;
+      background: #d1d1d1;
+      left: -28px;
+      top: 16px;
     }
 
     &:last-child {
-      margin-bottom: 0;
-
-      &::after {
-        height: 55px;
+      padding-bottom: 0;
+      &:after {
+        height: 90%;
       }
     }
 
@@ -50,12 +51,17 @@
   }
 }
 
-.education {
-  &::after {
-    height: 178px;
-  }
-
-  &:last-child::after {
-    height: 110px;
+@media (max-width: 520px) {
+  .background {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__items {
+      margin-bottom: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

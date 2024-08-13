@@ -1,6 +1,5 @@
 .portfolio {
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding: 30px 0;
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +25,16 @@
     &-name {
       font-size: 20px;
       font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio {
+    margin: 0 10px;
+
+    &__items {
+      justify-content: center;
     }
   }
 }

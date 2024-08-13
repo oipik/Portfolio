@@ -1,5 +1,6 @@
 .header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  padding: 0 10px;
 
   &__inner {
     height: 60px;
@@ -8,9 +9,10 @@
     align-items: center;
   }
 
-  &__logo {
-    font-weight: 600;
-    font-size: 20px;
+  &__mobile-menu {
+    display: none;
+    z-index: 30;
+    cursor: pointer;
   }
 }
 
@@ -18,7 +20,6 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
   }
 
   &__item {
@@ -27,9 +28,19 @@
 
   &__link {
     color: black;
-
     &:hover {
-      color: #33A8F6;
+      color: #33a8f6;
     }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    &__mobile-menu {
+      display: block;
+    }
+  }
+  .nav {
+    display: none;
   }
 }

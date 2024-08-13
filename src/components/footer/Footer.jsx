@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <Wrapper>
         <div className="footer__inner">
-          <p className="footer__logo">Portfolio</p>
+          <p className="footer__logo logo">Portfolio</p>
           Copyright 2024 Игорь.
         </div>
       </Wrapper>
