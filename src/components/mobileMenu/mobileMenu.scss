@@ -9,11 +9,18 @@
     height: 100%;
     background-color: #000;
     opacity: 0.5;
-    z-index: 10;
+    z-index: 1;
   }
 
-  &__logo {
-    margin: 15px 0 0 15px;
+  &__box {
+    display: flex;
+    margin: 15px 15px 0 15px;
+    justify-content: space-between;
+    &-img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
   }
 
   &__shadow-active {
@@ -26,11 +33,11 @@
     top: 0;
     width: 60%;
     background-color: white;
-    z-index: 20;
     justify-content: center;
     min-height: 100vh;
     transition: 1s all;
     transform: translateX(100%);
+    z-index: 2;
   }
 
   &__content-active {

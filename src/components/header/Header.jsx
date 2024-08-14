@@ -5,7 +5,6 @@ import Wrapper from "../wrapper/Wrapper";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import { navItems } from "../../data/data";
 
-import closeMenu from "../../images/icon-close-menu.svg";
 import mobileMenuIcon from "../../images/icon-menu.svg";
 
 const Header = () => {
@@ -31,11 +30,7 @@ const Header = () => {
             onClick={() => setIsMobileMenu(!isMobileMenu)}
             className="header__mobile-menu"
           >
-            {isMobileMenu ? (
-              <img src={closeMenu} alt="menu" />
-            ) : (
-              <img src={mobileMenuIcon} alt="menu" />
-            )}
+            <img src={mobileMenuIcon} alt="menu" />
           </div>
           <MobileMenu isOpen={isMobileMenu} setIsMobileMenu={setIsMobileMenu} />
         </div>

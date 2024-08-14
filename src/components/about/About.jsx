@@ -22,7 +22,7 @@ const About = () => {
             </li>
             <li>
               <strong>Должность: </strong>
-              Junior Frontend-разработчик
+              Frontend-разработчик
             </li>
             <li>
               <strong>Email: </strong>
