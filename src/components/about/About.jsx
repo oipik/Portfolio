@@ -1,5 +1,5 @@
-import "./about.scss";
-import photo from "../../images/photo.jpg";
+import './about.scss';
+import photo from '../../images/photo.jpg';
 
 const About = () => {
   return (
@@ -39,10 +39,10 @@ const About = () => {
               <a
                 rel="noreferrer"
                 className="about__link"
-                href="https://t.me/steel_mountin"
+                href="https://t.me/steell_mountain"
                 target="_blank"
               >
-                @steel_mountin
+                @steell_mountain
               </a>
             </li>
             <li>
@@ -50,10 +50,10 @@ const About = () => {
               <a
                 rel="noreferrer"
                 className="about__link"
-                href="https://github.com/oipik"
+                href="https://github.com/steel-mountain"
                 target="_blank"
               >
-                github.com/oipik
+                github.com/steel-mountain
               </a>
             </li>
             <li>
