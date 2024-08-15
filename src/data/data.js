@@ -30,7 +30,7 @@ export const projects = [
     ],
     descr:
       'Сервис для поиска и просмотра фильмов, сериалов и мультфильмов с удобной категоризацией и возможностью сохранять в избранное. Пользователи могут менять цветовую тему, просматривать карточки фильмов, а также пользоваться пагинацией. Поддерживается мобильная версия, регистрация и авторизация.',
-    href: "https://movie-store-xi-eight.vercel.app/"
+    href: "https://movie-store-sable-three.vercel.app/"
   },
   {
     src: fakeStore,
@@ -38,7 +38,7 @@ export const projects = [
     stack: ['Tailwind CSS', 'TS', 'React', 'RTK Query'],
     descr:
       'Приложение представляет из себя простое web приложение с каталогом товаров. По api выполняется запрос на получение товаров, отзывов и их отображение. Можно просматривать карточку товара, оставлять отзыв, смотреть отзывы, фильтровать товары, добавлять товары в корзину и производить общий подсчет суммы денег. Так же имеется пагинация. Реализована мобильная версия.',
-    href: "https://fake-store-neon-one.vercel.app/"
+    href: "https://fake-store-ebon.vercel.app/"
   },
   {
     src: portfolio,
@@ -53,21 +53,21 @@ export const projects = [
     name: 'Coffee-shop',
     stack: ['SCSS', 'JS', 'React'],
     descr: 'Небольшое многостраничное приложение о кофе.',
-    href: "https://coffee-shop-sand-theta.vercel.app/"
+    href: "https://coffee-shop-flame-seven.vercel.app/"
   },
   {
     src: axit,
     name: 'Axit',
     stack: ['HTML', 'SCSS', 'Gulp', 'JQuery'],
     descr: 'Представляет собой Landing Page страницу.',
-    href: "https://axit-rose.vercel.app/"
+    href: "https://axit-umber.vercel.app/"
   },
   {
     src: wawe,
     name: 'Wawe',
     stack: ['HTML', 'SCSS', 'JQuery'],
     descr: 'Представляет собой Landing Page страницу.',
-    href: "https://wawe-virid.vercel.app/"
+    href: "https://wawe-kappa.vercel.app/"
   },
 ];
 
